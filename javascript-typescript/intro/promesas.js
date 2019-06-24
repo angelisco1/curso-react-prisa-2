@@ -1,3 +1,5 @@
+// let axios = require('axios');
+
 // console.log(1)
 
 // setTimeout(() => {
@@ -20,32 +22,72 @@
 //   xhr.send();
 // }
 
-function getDatos() {
-  return fetch('https://jsonplaceholder.typicode.com/users');
+
+
+
+
+// function getDatos() {
+//   // return fetch('https://jsonplaceholder.typicode.com/users');
+
+//   return axios.get('https://jsonplaceholder.typicode.com/users');
+
+// }
+
+// getDatos()
+//   .then((resp) => {
+//     console.log(resp.data);
+//     // return resp.json();
+//   })
+  // .then((usuarios) => {
+  //   console.log(usuarios);
+  // });
+
+
+// function miPromesa() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve('Un mensaje')
+//       // reject('Ese mensaje');
+//     }, 2000);
+//   })
+// }
+
+// miPromesa()
+//   .then(msg => {
+//     console.log(msg);
+//   })
+//   .catch(err => {
+//     console.log('Err', err);
+//   })
+
+
+function getGeneros() {
+  return axios.get('https://ejemplos-dc1c1.firebaseio.com/generos.json');
 }
 
-getDatos()
+function getPeliculasDeGenero(genero) {
+  return axios.get(`https://ejemplos-dc1c1.firebaseio.com/peliculas/${genero}.json`);
+}
+
+// Obtener generos
+getGeneros()
   .then((resp) => {
-    console.log(resp);
-    return resp.json();
-  })
-  .then((usuarios) => {
-    console.log(usuarios);
-  });
+    let datos = resp.data;
 
+    let generos = [];
+    for (let id in datos) {
+      generos.push(datos[id]);
+    }
 
-function miPromesa() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      reject('Ese mensaje');
-    }, 2000);
-  })
-}
+    // Mostrar generos
+    // Elegir un genero
+    let generoElegido = prompt(generos.join('\n'));
+    console.log(generoElegido);
 
-miPromesa()
-  .then(msg => {
-    console.log(msg);
+    // Pedir peliculas del genero elegido
+    return getPeliculasDeGenero(generoElegido)
   })
-  .catch(err => {
-    console.log('Err', err);
+  .then((resp) => {
+    // MOstrar las peliculas
+    console.log(resp.data);
   })
