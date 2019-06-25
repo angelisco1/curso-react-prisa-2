@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Componentes from './components/componentes/index';
 import EstadosEventos from './components/estados-eventos/index';
 import ListaCards from './components/ejercicios/EjCard/ListaCards';
+import Formularios from './components/formularios';
 
 class App extends React.Component {
   render() {
@@ -10,8 +11,9 @@ class App extends React.Component {
       <div>
         {/* <h1>Hola mundo!</h1> */}
         {/* <Componentes /> */}
-        <EstadosEventos />
-        {/* <ListaCards /> */}
+        {/* <EstadosEventos /> */}
+        <ListaCards />
+        {/* <Formularios /> */}
       </div>
     )
   }
