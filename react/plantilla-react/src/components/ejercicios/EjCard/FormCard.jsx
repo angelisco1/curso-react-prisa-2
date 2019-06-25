@@ -15,7 +15,13 @@ class FormCard extends React.Component {
   enviarDatos(event) {
     event.preventDefault();
     console.log(this.state);
+    this.props.guardar(this.state);
     console.log('Datos enviados...');
+    this.setState({
+      titulo: '',
+      texto: '',
+      urlImg: ''
+    })
   }
 
   handleChange(event) {

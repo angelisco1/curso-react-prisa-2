@@ -12,13 +12,12 @@ class ListaCards extends React.Component {
         { id: 1, titulo: 'Minions Ipsum 2', texto: 'Aaaaaah tatata bala tu pepete tatata bala tu. Belloo! underweaaar la bodaaa hana dul sae pepete. Jeje bananaaaa ti aamoo! Hahaha chasy belloo! Gelatooo bee do bee do bee do. Chasy aaaaaah uuuhhh para tú uuuhhh bananaaaa.', urlImg: 'http://www.calberhs.com/minionsipsum/img/minion.png' }
       ]
     }
+    this.guardarCard = this.guardarCard.bind(this);
   }
 
   guardarCard(card) {
     const nuevoCard = {...card, id: this.state.nextId};
-
     const nuevosCards = [...this.state.cards, nuevoCard];
-
     this.setState({
       cards: nuevosCards,
       nextId: this.state.nextId + 1
@@ -29,7 +28,7 @@ class ListaCards extends React.Component {
     const listaCards = this.state.cards.map(card => <Card key={card.id} {...card} />)
     return (
       <div>
-        <FormCard />
+        <FormCard guardar={this.guardarCard} />
         <hr/>
         {/* <Card {...this.state.cards[0]} />
         <Card {...this.state.cards[1]} /> */}
