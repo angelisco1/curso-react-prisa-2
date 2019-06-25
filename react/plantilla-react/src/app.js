@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import Componentes from './components/componentes/index';
 
 class App extends React.Component {
   render() {
     return (
-      <h1>Hola mundo!</h1>
+      <div>
+        {/* <h1>Hola mundo!</h1> */}
+        <Componentes/>
+      </div>
     )
   }
 }
