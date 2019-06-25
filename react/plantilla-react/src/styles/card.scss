@@ -1,0 +1,30 @@
+$colorFondo: whitesmoke;
+
+.card {
+  width: 250px;
+  background-color: $colorFondo;
+  border: 1px solid black;
+  h2 {
+    text-align: center;
+  }
+  div {
+    padding: 5px 15px;
+    img {
+      width: 100%;
+    }
+  }
+  .btn-group-card {
+    display: flex;
+    justify-content: space-evenly;
+    button {
+      height: 20px;
+      width: 50px;
+      border: 1px solid black;
+      background-color: $colorFondo;
+      &:hover {
+        border: 1px solid $colorFondo;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}

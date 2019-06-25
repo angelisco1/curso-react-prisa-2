@@ -4,7 +4,7 @@ import Content from './Content';
 import Footer from './Footer';
 
 const Card = props => (
-  <div>
+  <div className="card">
     <Header titulo={props.titulo} />
     <Content urlImg={props.urlImg} texto={props.texto} />
     <Footer btn1Txt={props.buttons[0]} btn2Txt={props.buttons[1]} />
