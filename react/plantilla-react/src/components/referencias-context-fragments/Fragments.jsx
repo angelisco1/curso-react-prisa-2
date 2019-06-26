@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Fragments = (props) => (
-  <div>
+  <React.Fragment>
     <p>Un párrafo</p>
-  </div>
+    <p>Otro párrafo</p>
+  </React.Fragment>
 );
 
 export default Fragments;
