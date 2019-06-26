@@ -5,6 +5,7 @@ import EstadosEventos from './components/estados-eventos/index';
 import ListaCards from './components/ejercicios/EjCard/ListaCards';
 import Formularios from './components/formularios';
 import CicloVidaCmp from './components/ciclo-vida';
+import LayoutCmp from './components/layouts';
 import './styles/style.css';
 import './styles/card.scss';
 
@@ -17,7 +18,8 @@ class App extends React.Component {
         {/* <EstadosEventos /> */}
         {/* <ListaCards /> */}
         {/* <Formularios /> */}
-        <CicloVidaCmp />
+        {/* <CicloVidaCmp /> */}
+        <LayoutCmp />
       </div>
     )
   }

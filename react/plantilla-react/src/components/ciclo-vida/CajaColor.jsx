@@ -14,7 +14,14 @@ class CajaColor extends React.Component {
     }
   }
 
+  shouldComponentUpdate(nextProps) {
+    let colorNuevo = nextProps.num < 0 ? 'red' : 'green';
+    let colorAnterior = this.state.colorFondo;
+    return colorNuevo !== colorAnterior;
+  }
+
   render() {
+    console.log('Se ha pintado!');
     const styles = {
       width: '100px',
       height: '100px',
