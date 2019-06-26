@@ -8,6 +8,7 @@ import CicloVidaCmp from './components/ciclo-vida';
 import LayoutCmp from './components/layouts';
 import './styles/style.css';
 import './styles/card.scss';
+import RefsCtxFragments from './components/referencias-context-fragments';
 
 class App extends React.Component {
   render() {
@@ -19,7 +20,8 @@ class App extends React.Component {
         {/* <ListaCards /> */}
         {/* <Formularios /> */}
         {/* <CicloVidaCmp /> */}
-        <LayoutCmp />
+        {/* <LayoutCmp /> */}
+        <RefsCtxFragments />
       </div>
     )
   }
