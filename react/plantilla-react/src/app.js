@@ -10,6 +10,7 @@ import './styles/style.css';
 import './styles/card.scss';
 import RefsCtxFragments from './components/referencias-context-fragments';
 import MiCV from './components/ejercicios/EjCV';
+import HocsCmp from './components/hocs';
 
 class App extends React.Component {
   render() {
@@ -23,7 +24,8 @@ class App extends React.Component {
         {/* <CicloVidaCmp /> */}
         {/* <LayoutCmp /> */}
         {/* <RefsCtxFragments /> */}
-        <MiCV />
+        {/* <MiCV /> */}
+        <HocsCmp />
       </div>
     )
   }
