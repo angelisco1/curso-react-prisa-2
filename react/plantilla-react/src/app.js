@@ -9,6 +9,7 @@ import LayoutCmp from './components/layouts';
 import './styles/style.css';
 import './styles/card.scss';
 import RefsCtxFragments from './components/referencias-context-fragments';
+import MiCV from './components/ejercicios/EjCV';
 
 class App extends React.Component {
   render() {
@@ -21,7 +22,8 @@ class App extends React.Component {
         {/* <Formularios /> */}
         {/* <CicloVidaCmp /> */}
         {/* <LayoutCmp /> */}
-        <RefsCtxFragments />
+        {/* <RefsCtxFragments /> */}
+        <MiCV />
       </div>
     )
   }
