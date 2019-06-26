@@ -14,6 +14,7 @@ class CicloVidaCmp extends React.Component {
     return (
       <div>
         <h1>Ciclo de vida</h1>
+        <CajaColor num={this.state.num} />
       </div>
     )
   }
