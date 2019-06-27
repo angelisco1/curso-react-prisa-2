@@ -2,24 +2,27 @@ import * as ActionTypes from './action-types';
 
 const initialState = {
   listaTareas: [],
-  nextId: 0,
   filtro: '',
   listaTareasFiltradas: []
+}
+
+function inicializar(state, tareas) {
+  return {
+    ...state,
+    listaTareas: tareas,
+    listaTareasFiltradas: filtrarLista(tareas, state.filtro),
+  }
 }
 
 function addTarea(state, tarea) {
   const nuevaListaTareas = [
     ...state.listaTareas,
-    {
-      ...tarea,
-      id: state.nextId
-    }
+    tarea
   ]
   return {
     ...state,
     listaTareas: nuevaListaTareas,
     listaTareasFiltradas: filtrarLista(nuevaListaTareas, state.filtro),
-    nextId: state.nextId + 1
   }
 }
 
@@ -69,6 +72,8 @@ function filtrarLista(lista, texto) {
 export default function listaTareas(state = initialState, action) {
   console.log('Reducer: ', action);
   switch(action.type) {
+    case ActionTypes.INICIALIZAR_TAREAS:
+      return inicializar(state, action.payload);
     case ActionTypes.CREAR_TAREA:
       return addTarea(state, action.payload);
     case ActionTypes.BORRAR_TAREA:

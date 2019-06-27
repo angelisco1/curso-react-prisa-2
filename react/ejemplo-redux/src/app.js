@@ -4,19 +4,20 @@ import ListaTareas from './components/ListaTareas';
 import Form from './components/Form';
 import Filtro from './components/Filtro';
 import configStore from './store/config-store';
-import { Provider } from 'react-redux';
+import { Provider, connect } from 'react-redux';
+import { initTareas } from './store/lista-tareas/actions';
 
 const store = configStore();
 
 class App extends React.Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     tareas: []
-  //   }
+  // constructor(props) {
+    // super(props);
+    // this.state = {
+    //   tareas: []
+    // }
   // }
 
-  // componentDidMount() {
+  componentDidMount() {
   //   store.subscribe(() => {
   //     this.setState({
   //       tareas: store.getState().listaTareas
@@ -25,7 +26,8 @@ class App extends React.Component {
   //   this.setState({
   //     tareas: store.getState().listaTareas
   //   })
-  // }
+    this.props.inicializarEstado();
+  }
 
   render() {
     return (
@@ -41,4 +43,11 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
+const mapDispatchToProps = {
+  inicializarEstado: initTareas
+}
+
+const withProps = connect(null, mapDispatchToProps);
+const MiApp = withProps(App);
+
+ReactDOM.render(<Provider store={store}><MiApp /></Provider>, document.getElementById('root'));
