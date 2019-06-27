@@ -16,7 +16,7 @@ class ListaTareas extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    tareas: state.listaTareas
+    tareas: state.listaTareasFiltradas
   }
 }
 
