@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import Tarea from './Tarea';
+import { connect } from 'react-redux';
 
-export default class ListaTareas extends Component {
+class ListaTareas extends Component {
   render() {
-    const listaTareas = [].map(t => (<Tarea key={t.id} tarea={t} />));
+    const listaTareas = this.props.tareas.map(t => (<Tarea key={t.id} tarea={t} />));
     return (
       <div>
         {listaTareas}
@@ -11,3 +12,14 @@ export default class ListaTareas extends Component {
     )
   }
 }
+
+
+const mapStateToProps = (state) => {
+  return {
+    tareas: state.listaTareas
+  }
+}
+
+const withProps = connect(mapStateToProps);
+
+export default withProps(ListaTareas)
