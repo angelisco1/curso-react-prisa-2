@@ -44,6 +44,18 @@ function crearActionTarea(tarea) {
 }
 
 function borrarTarea(idTarea) {
+  return (dispatch) => {
+    fetch(`https://todo-list-603ba.firebaseio.com/mis-tareas/${idTarea}.json`, {
+      method: 'DELETE',
+    })
+      .then(resp => resp.json())
+      .then(datos => {
+        dispatch(borrarActionTarea(idTarea));
+      })
+  }
+}
+
+function borrarActionTarea(idTarea) {
   return {
     type: ActionTypes.BORRAR_TAREA,
     payload: idTarea
@@ -51,6 +63,20 @@ function borrarTarea(idTarea) {
 }
 
 function editarTarea(tarea) {
+  const tareaSinId = {nombre: tarea.nombre, completada: tarea.completada}
+  return (dispatch) => {
+    fetch(`https://todo-list-603ba.firebaseio.com/mis-tareas/${tarea.id}.json`, {
+      method: 'PUT',
+      body: JSON.stringify(tareaSinId)
+    })
+      .then(resp => resp.json())
+      .then(datos => {
+        dispatch(editarActionTarea(tarea));
+      })
+  }
+}
+
+function editarActionTarea(tarea) {
   return {
     type: ActionTypes.EDITAR_TAREA,
     payload: tarea

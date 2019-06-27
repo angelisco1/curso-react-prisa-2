@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1561036708527" clover="3.2.0">
+  <project timestamp="1561036708527" name="All files">
+    <metrics statements="43" coveredstatements="43" conditionals="14" coveredconditionals="14" methods="20" coveredmethods="20" elements="77" coveredelements="77" complexity="0" loc="43" ncloc="43" packages="3" files="6" classes="6"/>
+    <package name="components.info-usuario">
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="info-usuario.jsx" path="/Users/angelisco1/Documents/PRONOIDE/gitlab/curso-react/ejercicios/ej-testing/src/components/info-usuario/info-usuario.jsx">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="29" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.lista-compra">
+      <metrics statements="28" coveredstatements="28" conditionals="8" coveredconditionals="8" methods="13" coveredmethods="13"/>
+      <file name="lista-compra.jsx" path="/Users/angelisco1/Documents/PRONOIDE/gitlab/curso-react/ejercicios/ej-testing/src/components/lista-compra/lista-compra.jsx">
+        <metrics statements="24" coveredstatements="24" conditionals="6" coveredconditionals="6" methods="11" coveredmethods="11"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="25" count="13" type="stmt"/>
+        <line num="31" count="18" type="stmt"/>
+        <line num="32" count="44" type="stmt"/>
+        <line num="36" count="18" type="stmt"/>
+        <line num="40" count="18" type="stmt"/>
+        <line num="41" count="18" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="61" count="18" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="96" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="97" count="20" type="stmt"/>
+      </file>
+      <file name="producto.jsx" path="/Users/angelisco1/Documents/PRONOIDE/gitlab/curso-react/ejercicios/ej-testing/src/components/lista-compra/producto.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="17" type="stmt"/>
+        <line num="7" count="17" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.contador">
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="action-types.js" path="/Users/angelisco1/Documents/PRONOIDE/gitlab/curso-react/ejercicios/ej-testing/src/store/contador/action-types.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+      </file>
+      <file name="actions.js" path="/Users/angelisco1/Documents/PRONOIDE/gitlab/curso-react/ejercicios/ej-testing/src/store/contador/actions.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/angelisco1/Documents/PRONOIDE/gitlab/curso-react/ejercicios/ej-testing/src/store/contador/index.js">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="5" count="5" type="cond" truecount="3" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

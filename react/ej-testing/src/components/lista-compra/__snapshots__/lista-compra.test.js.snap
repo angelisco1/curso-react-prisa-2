@@ -1,0 +1,509 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListaCompra component should add a new product to the list 1`] = `
+<ListaCompra
+  logueado={true}
+  productos={
+    Array [
+      Object {
+        "checked": false,
+        "id": 0,
+        "nombre": "One Plus 5T",
+      },
+      Object {
+        "checked": false,
+        "id": 1,
+        "nombre": "Funda One Plus",
+      },
+      Object {
+        "checked": false,
+        "id": 2,
+        "nombre": "SD 64GB",
+      },
+    ]
+  }
+>
+  <div>
+    <h1>
+      Lista compra
+    </h1>
+    <Producto
+      checked={false}
+      key="0"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          One Plus 5T
+        </span>
+      </div>
+    </Producto>
+    <Producto
+      checked={false}
+      key="1"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          Funda One Plus
+        </span>
+      </div>
+    </Producto>
+    <Producto
+      checked={false}
+      key="2"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          SD 64GB
+        </span>
+      </div>
+    </Producto>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </form>
+    <button
+      type="button"
+    >
+      Logout
+    </button>
+  </div>
+</ListaCompra>
+`;
+
+exports[`ListaCompra component should add a new product to the list 2`] = `
+<ListaCompra
+  logueado={true}
+  productos={
+    Array [
+      Object {
+        "checked": false,
+        "id": 0,
+        "nombre": "One Plus 5T",
+      },
+      Object {
+        "checked": false,
+        "id": 1,
+        "nombre": "Funda One Plus",
+      },
+      Object {
+        "checked": false,
+        "id": 2,
+        "nombre": "SD 64GB",
+      },
+    ]
+  }
+>
+  <div>
+    <h1>
+      Lista compra
+    </h1>
+    <Producto
+      checked={false}
+      key="0"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          One Plus 5T
+        </span>
+      </div>
+    </Producto>
+    <Producto
+      checked={false}
+      key="1"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          Funda One Plus
+        </span>
+      </div>
+    </Producto>
+    <Producto
+      checked={false}
+      key="2"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          SD 64GB
+        </span>
+      </div>
+    </Producto>
+    <Producto
+      checked={false}
+      key="3"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          un producto nuevo
+        </span>
+      </div>
+    </Producto>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </form>
+    <button
+      type="button"
+    >
+      Logout
+    </button>
+  </div>
+</ListaCompra>
+`;
+
+exports[`ListaCompra component should check a product 1`] = `
+<ListaCompra
+  logueado={true}
+  productos={
+    Array [
+      Object {
+        "checked": true,
+        "id": 0,
+        "nombre": "One Plus 5T",
+      },
+      Object {
+        "checked": false,
+        "id": 1,
+        "nombre": "Funda One Plus",
+      },
+      Object {
+        "checked": false,
+        "id": 2,
+        "nombre": "SD 64GB",
+      },
+    ]
+  }
+>
+  <div>
+    <h1>
+      Lista compra
+    </h1>
+    <Producto
+      checked={true}
+      key="0"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "line-through",
+          }
+        }
+      >
+        <span>
+          One Plus 5T
+        </span>
+      </div>
+    </Producto>
+    <Producto
+      checked={false}
+      key="1"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          Funda One Plus
+        </span>
+      </div>
+    </Producto>
+    <Producto
+      checked={false}
+      key="2"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          SD 64GB
+        </span>
+      </div>
+    </Producto>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </form>
+    <button
+      type="button"
+    >
+      Logout
+    </button>
+  </div>
+</ListaCompra>
+`;
+
+exports[`ListaCompra component should check a product 2`] = `
+<ListaCompra
+  logueado={true}
+  productos={
+    Array [
+      Object {
+        "checked": false,
+        "id": 0,
+        "nombre": "One Plus 5T",
+      },
+      Object {
+        "checked": false,
+        "id": 1,
+        "nombre": "Funda One Plus",
+      },
+      Object {
+        "checked": false,
+        "id": 2,
+        "nombre": "SD 64GB",
+      },
+    ]
+  }
+>
+  <div>
+    <h1>
+      Lista compra
+    </h1>
+    <Producto
+      checked={false}
+      key="0"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          One Plus 5T
+        </span>
+      </div>
+    </Producto>
+    <Producto
+      checked={false}
+      key="1"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          Funda One Plus
+        </span>
+      </div>
+    </Producto>
+    <Producto
+      checked={false}
+      key="2"
+      onHandleClick={[Function]}
+    >
+      <div
+        className="producto"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <span>
+          SD 64GB
+        </span>
+      </div>
+    </Producto>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </form>
+    <button
+      type="button"
+    >
+      Logout
+    </button>
+  </div>
+</ListaCompra>
+`;
+
+exports[`ListaCompra component should match its empty snapshot 1`] = `
+<div>
+  <h1>
+    No estas logueado
+  </h1>
+  <button
+    type="button"
+  >
+    Login
+  </button>
+</div>
+`;
+
+exports[`ListaCompra component should match its snapshot with empty products and logueado 1`] = `
+<div>
+  <h1>
+    Lista compra
+  </h1>
+  <p>
+    Lista vacia
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </form>
+  <button
+    type="button"
+  >
+    Logout
+  </button>
+</div>
+`;
+
+exports[`ListaCompra component should match its snapshot with products and logueado 1`] = `
+<div>
+  <h1>
+    Lista compra
+  </h1>
+  <Producto
+    checked={true}
+    key="0"
+    onHandleClick={[Function]}
+  >
+    One Plus 5T
+  </Producto>
+  <Producto
+    checked={false}
+    key="1"
+    onHandleClick={[Function]}
+  >
+    Funda One Plus
+  </Producto>
+  <Producto
+    checked={false}
+    key="2"
+    onHandleClick={[Function]}
+  >
+    SD 64GB
+  </Producto>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </form>
+  <button
+    type="button"
+  >
+    Logout
+  </button>
+</div>
+`;
